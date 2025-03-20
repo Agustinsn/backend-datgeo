@@ -1,21 +1,35 @@
-## Description
+## Descripción
 Backend para prueba técnica para el puesto de Desarrollador Full Stack
 en la empresa DatGeo.
 
 Este proyecto se ha realizado con NestJs y TypeORM. 
 Se utiliza entities crear migraciónes y asi generar/actualizar las tablas den la base de datos.
-## Project setup
+
+## Variables de entornos necesarias
+
+DATABASE_URL=postgresql://...
+
+USER_NAME = adminDatGeo
+USER_LAST_NAME = adminDatGeo
+USER_PASSWORD = adminDatGeo123
+USER_EMAIL = adminDatGeo@gmail.com
+USER_SALARY = 1000
+USER_DNI = 123456789
+
+AWS_ACCESS_KEY_ID = ABCD123FGHE
+AWS_SECRET_ACCESS_KEY = *A123*/q01a
+AWS_REGION = us-east-1
+AWS_BUCKET_NAME = test
+
+## Instalación
 
 ```bash
 $ npm install
 ```
 
-## Compile and run the project
+## Ejecución
 
 ```bash
-# Empezar el proyecto
-$ npm run start
-
 # Generar la migración apartir de las entitys creadas
 $ npm run generateMigration
 
@@ -24,23 +38,10 @@ $ npm run createDataBase
 
 # Correr el seed para la creación del usuario principal
 $ npm run runSeed
+
+# Empezar el proyecto
+$ npm run start
 ```
 
-## Deployment
-
-When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
-
-If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
-
-```bash
-$ npm install -g mau
-$ mau deploy
-```
-
-With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
-
-
-- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
+## Endpoints
+# Se puede encontrar la documentación de los enpoints en localhost:3000/api/docs
